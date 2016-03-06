@@ -1,0 +1,35 @@
+<?php
+ //process client request  (via url)
+
+  header("Content-Type:application/json");
+  include 'functions.php';
+
+ if(!empty($_GET['name'])){
+  
+   $name = $_GET['name'];
+   $price =get_price($name);
+   if(empty($price))
+       deliver_response(200,"book not found",NULL);
+       //book not found
+    else
+     //respond book price
+      deliver_response(200,"got your book",$price);
+ }
+ else
+ {
+    //invalid request
+    deliver_response(400,"no entry found",NULL);
+
+ }
+
+  function deliver_response($status,$status_message,$data)
+   {
+    header("HTTP/1.1 $status $status_message");
+    $response['status']=$status;
+    $response['status_message']=$status_message;
+    $response['data']=$data;
+   
+     $json_response=json_encode($response);
+     echo $json_response;
+    }
+?>
