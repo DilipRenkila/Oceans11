@@ -21,10 +21,10 @@ $ sudo cpan install Net::OpenSSH
 
 ##Getting Started
 
-1. Before proceeding to installation, please change the login credentials in "db.conf" file.
+Before proceeding to installation, please change the login credentials in "db.conf" file.
 
 ```perl
-$hostname = ""; # ip address 
+$hostname = ""; # Enter your ip address 
 $username = ""; # username for mysql database
 $password = ""; # password of your mysql database
 $database = "Oceans11";
