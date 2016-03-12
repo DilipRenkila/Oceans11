@@ -22,18 +22,17 @@ $ sudo cpan install Net::OpenSSH
 ##Getting Started
 
 1. Before proceeding to installation, please change the login credentials in "db.conf" file.
-`$hostname = ""; # ip address 
+
+```perl
+$hostname = ""; # ip address 
 $username = ""; # username for mysql database
 $password = ""; # password of your mysql database
 $database = "Oceans11";
-
-#Details for making SSH connection
 $host = "$username\@$hostname";
 $passphrase = "";
-
-#username and password for tool
-$user="";
-$pass="";`
+$user=""; #username and password for tool
+$pass="";
+```
 
 2. If the Apache server is configured in a different directory other than var/www/html/
 the change the default working directory assigned to the variable "def1_path" to the custom 
