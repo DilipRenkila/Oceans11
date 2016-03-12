@@ -55,10 +55,9 @@ To open the dashboard, just open the following [link](`https://localhost/fronten
 
 **What If SSH connection fails to establish?**
  Please check for the SSH keys and valid permissions and verify if Net::OpenSSH perl module is installed correctly.
-**Failing to create database ?**
- Please check for the credentials in "db.conf" file and verify if DBI perl module is installed correctly.
-
-Q. Failed to open the Dashboard ?
+**Failed to create database ?**
+`Please check for the credentials in "db.conf" file and verify if DBI perl module is installed correctly.`
+**Failed to open the Dashboard?**
 A. Verify the port on which the apache2 server is configured and also grant the required permissions to the frontend files.
 
 ##FAQ
