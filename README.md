@@ -46,31 +46,31 @@ To automatically install the tool along with all the pre-requisites, Just run th
 ```
 To just Run the backend ("Pre-requisites need to be already installed") use "run.sh" by using the following command from your tool directory
 ```sh
-./run.sh" 
+./run.sh
 ```
 To open the dashboard, just open the following [link](`https://localhost/frontend/index.php).
 ````https://localhost/frontend/index.php ````
 
 ##Troubleshooting
 
-Q: What If SSH connection fails to establish ?
-A: Please check for the SSH keys and valid permissions and verify if Net::OpenSSH perl module is installed correctly.
+Q. What If SSH connection fails to establish ?
+A. Please check for the SSH keys and valid permissions and verify if Net::OpenSSH perl module is installed correctly.
 
-Q: Failing to create database ?
-A: Please check for the credentials in "db.conf" file and verify if DBI perl module is installed correctly.
+Q. Failing to create database ?
+A. Please check for the credentials in "db.conf" file and verify if DBI perl module is installed correctly.
 
-Q: Failed to open the Dashboard ?
-A: Verify the port on which the apache2 server is configured and also grant the required permissions to the frontend files.
+Q. Failed to open the Dashboard ?
+A. Verify the port on which the apache2 server is configured and also grant the required permissions to the frontend files.
 
 ##FAQ
 
-Q: Will this tool work on both i386 and amd64 platforms?
-A: Yes, this tool is independent of the system architecture but 
+Q. Will this tool work on both i386 and amd64 platforms?
+A. Yes, this tool is independent of the system architecture but 
 currently supports linux based platforms. Development for other
 platforms will be provided in the future.
 
-Q: I don't want my frontend files to be in "/var/www/html/" directory, 
+Q. I don't want my frontend files to be in "/var/www/html/" directory, 
 what to do?
-A: Please change the directory assigned to the variable 
+A. Please change the directory assigned to the variable 
 ````$def1_path````. 
 
