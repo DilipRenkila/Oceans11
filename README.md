@@ -1,15 +1,13 @@
-#Simple Open stack Monitoring Tool
+#Openstack Monitoring Tool
 
-A Simple Openstack ecosystem monitoring tool which gives you basic understanding of the various services running through a dashboard
+An Openstack ecosystem monitoring tool which gives you basic understanding of the various services running through a dashboard
 
 
 ##Introduction
 
-The tool facilitates the monitoring of various Openstack services deployed on the nodes in the 
-Openstack environment. This tool can monitor the status of the OpenStack services, It also provides
-and simple intuitive web based drilled down GUI to restart services, measure historical data on uptime
-Accessibility of services and detects periodicity of failures through a RESTful interface.
-
+This tool facilitates the monitoring of various Openstack services deployed on the nodes in an
+Openstack environment. This tool can monitor the status of the OpenStack services and it can also provide
+a simple dashboard.
 
 ##Requirements
 
