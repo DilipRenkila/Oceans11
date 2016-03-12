@@ -1,6 +1,6 @@
 #Openstack Monitoring Tool
 
-An Openstack ecosystem monitoring tool which gives you basic understanding of the various services running through a dashboard
+An Openstack ecosystem monitoring tool which gives you basic understanding of the running services through a dashboard.
 
 
 ##Introduction
@@ -11,7 +11,7 @@ a simple dashboard.
 
 ##Requirements
 
-The packages required can be installed by the following command.
+The packages required can be installed by the following.
 
 ```sh
 $ sudo apt-get -y install apache2 mysql-server php5 php5-mysql libgd-graph-perl libapache2-mod-php5 cpanminus openssh-server
@@ -22,6 +22,18 @@ $ sudo cpan install Net::OpenSSH
 ##Getting Started
 
 1. Before proceeding to installation, please change the login credentials in "db.conf" file.
+`$hostname = ""; # ip address 
+$username = ""; # username for mysql database
+$password = ""; # password of your mysql database
+$database = "Oceans11";
+
+#Details for making SSH connection
+$host = "$username\@$hostname";
+$passphrase = "";
+
+#username and password for tool
+$user="";
+$pass="";`
 
 2. If the Apache server is configured in a different directory other than var/www/html/
 the change the default working directory assigned to the variable "def1_path" to the custom 
