@@ -1,23 +1,28 @@
-SOMtool - Simple Open stack Monitoring Tool
-==========================================
+#Simple Open stack Monitoring Tool
 
-Introduction:
--------------
+A Simple Openstack ecosystem monitoring tool which gives you basic understanding of the various services running through a dashboard
+
+
+##Introduction
+
 The tool facilitates the monitoring of various Openstack services deployed on the nodes in the 
 Openstack environment. This tool can monitor the status of the OpenStack services, It also provides
 and simple intuitive web based drilled down GUI to restart services, measure historical data on uptime
 Accessibility of services and detects periodicity of failures through a RESTful interface.
 
-Requirements:
--------------
-The following packages are used for development of this tool. They will be automatically installed while executing "install.sh". 
-apache2,mysql-server,php5,php5-mysql,libapache2-mod-php5,cpanminus,openssh-server.
 
-following cpan perl modules will also be installed automatically
-DBI,Net::OpenSSH.
+##Requirements
 
-Getting Started:
-----------------
+The packages required can be installed by the following command.
+
+```sh
+$ sudo apt-get -y install apache2 mysql-server php5 php5-mysql libgd-graph-perl libapache2-mod-php5 cpanminus openssh-server
+$ sudo cpan install DBI
+$ sudo cpan install Net::OpenSSH
+```
+
+##Getting Started
+
 1. Before proceeding to installation, please change the login credentials in "db.conf" file.
 
 2. If the Apache server is configured in a different directory other than var/www/html/
@@ -60,5 +65,4 @@ Q: I don't want my frontend files to be in "/var/www/html/" directory,
 what to do?
 A: Please change the directory assigned to the variable 
 "$def1_path". 
-
 
