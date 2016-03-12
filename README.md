@@ -52,10 +52,10 @@ To open the dashboard, just open the following [link](`https://localhost/fronten
 ````https://localhost/frontend/index.php ````
 
 ##Troubleshooting
-**Can I use Python 3?**
-** What If SSH connection fails to establish ?**
+
+**What If SSH connection fails to establish?**
 Please check for the SSH keys and valid permissions and verify if Net::OpenSSH perl module is installed correctly.
-** Failing to create database ?**
+**Failing to create database ?**
 A. Please check for the credentials in "db.conf" file and verify if DBI perl module is installed correctly.
 
 Q. Failed to open the Dashboard ?
