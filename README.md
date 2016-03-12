@@ -34,28 +34,29 @@ $user=""; #username and password for tool
 $pass="";
 ```
 
-2. If the Apache server is configured in a different directory other than var/www/html/
+If the Apache server is configured in a different directory other than ````var/www/html````
 the change the default working directory assigned to the variable "def1_path" to the custom 
 path in which the Apache server is configured
 
-Installation:
--------------
-*To automatically install the tool along with all the pre-requisites, Just run the "install.sh".using the following command from your tool directory
-	./install.sh
+##Installation:
 
-*To just Run the backed ("Pre-requisites need to be already installed") use "run.sh". using the following command from your tool directory
-	./run.sh" 
+To automatically install the tool along with all the pre-requisites, Just run the ````install.sh```` script using the following command from your tool directory
+```sh
+./install.sh
+```
+To just Run the backed ("Pre-requisites need to be already installed") use "run.sh" by using the following command from your tool directory
+```sh
+./run.sh" 
+```
+To open the dashboard, just open the following [link](http://flask-login.readthedocs.org/en/latest/).
+````https://localhost/frontend/index.php ````
 
-*To open the web GUI, just open the following link:
-	https://localhost/frontend/index.php
+###Troubleshooting
 
-Troubleshooting:
-----------------
-*If SSH connection fails to establish, 
--please check for the SSH keys and valid permissions.
--verify if Net::OpenSSH perl module is installed correctly.
+If SSH connection fails to establish,please check for the SSH keys and valid permissions and 
+verify if Net::OpenSSH perl module is installed correctly.
 
-*Failed to create database,
+Failed to create database,
 -please check for the credentials in "db.conf" file.
 -verify if DBI perl module is installed correctly.
 
