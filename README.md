@@ -53,7 +53,7 @@ To open the dashboard, just open the following [link](`https://localhost/fronten
 
 ##Troubleshooting
 
-**What If SSH connection fails to establish?**:
+**What If SSH connection fails to establish?**
 - Please check for the SSH keys and valid permissions and verify if Net::OpenSSH perl module is installed correctly.
 
 **Failed to create database ?**:
