@@ -58,6 +58,7 @@ To open the dashboard, just open the following [link](`https://localhost/fronten
 
 **Failed to create database ?**:
 - Please check for the credentials in "db.conf" file and verify if DBI perl module is installed correctly.
+
 **Failed to open the Dashboard?**:
 - Verify the port on which the apache2 server is configured and also grant the required permissions to the frontend files.
 
@@ -70,6 +71,5 @@ platforms will be provided in the future.
 
 **I don't want my frontend files to be in "/var/www/html/" directory, 
 what to do?**:
-- Please change the directory assigned to the variable 
-````$def1_path````. 
+- Please change the directory assigned to the variable ````$def1_path````. 
 
