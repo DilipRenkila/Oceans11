@@ -38,7 +38,7 @@ If the Apache server is configured in a different directory other than ````var/w
 the change the default working directory assigned to the variable "def1_path" to the custom 
 path in which the Apache server is configured
 
-##Installation:
+##Installation
 
 To automatically install the tool along with all the pre-requisites, Just run the ````install.sh```` script using the following command from your tool directory
 ```sh
